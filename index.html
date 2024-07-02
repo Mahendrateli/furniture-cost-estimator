@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniture Cost Estimator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Furniture Cost Estimator</h1>
+        <form id="uploadForm">
+            <div class="form-group">
+                <label for="fileInput">Upload Images or PDFs</label>
+                <input type="file" id="fileInput" class="form-control" accept="image/*,.pdf">
+            </div>
+            <button type="submit" class="btn">Generate Process</button>
+        </form>
+        <div id="results">
+            <h2>Results</h2>
+            <pre id="rawData"></pre>
+            <pre id="dimensions"></pre>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
